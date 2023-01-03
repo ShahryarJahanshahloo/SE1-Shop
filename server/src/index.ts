@@ -1,4 +1,9 @@
 import http from 'http'
+import dotenv from 'dotenv'
+import * as customRequest from './custom'
+import * as environmentTypes from './environment'
+dotenv.config({ path: './config/dev.env' })
+
 import app from './app'
 import startDBConnection from './db/connection'
 
